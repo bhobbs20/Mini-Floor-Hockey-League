@@ -1,0 +1,6 @@
+<h1>Teams Home Page</h1>
+
+{% for team in teams %}
+   <a href="{% url 'teams:team_detail' team.id %}" <h2>{{ team.name }} </h2>
+    <img src="{{ team.logo }}" />
+{% endfor %}
